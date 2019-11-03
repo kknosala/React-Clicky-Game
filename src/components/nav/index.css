@@ -1,6 +1,10 @@
 .navBar {
   background-color: skyblue;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -8,15 +12,16 @@
   text-align: center;
   align-content: center;
 }
-
-.navName {
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   align-self: center;
 }
-
-.navMessage {
-  align-self: center;
-}
-
-.navCounter {
-  align-self: center;
+li {
+  float: left;
+  padding: 10px;
+  width: 33.3%;
 }

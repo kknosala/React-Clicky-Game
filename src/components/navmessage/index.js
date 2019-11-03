@@ -6,8 +6,8 @@ class NavMessage extends Component {
   };
   render() {
     return (
-      <div className="navMessage">
-        <h2>{this.state.message}</h2>
+      <div>
+        <h3>{this.state.message}</h3>
       </div>
     );
   }

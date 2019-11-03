@@ -1,12 +1,50 @@
 [
   {
     "id": 1,
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "clicked": false
+    "image": "./images/Homer.png"
   },
   {
     "id": 2,
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "clicked": false
+    "image": "./images/Marge.png"
+  },
+  {
+    "id": 3,
+    "image": "./images/Bart.png"
+  },
+  {
+    "id": 4,
+    "image": "./images/Lisa.png"
+  },
+  {
+    "id": 5,
+    "image": "./images/Maggie.png"
+  },
+  {
+    "id": 6,
+    "image": "./images/Milhouse.png"
+  },
+  {
+    "id": 7,
+    "image": "./images/Abraham.png"
+  },
+  {
+    "id": 8,
+    "image": "./images/Mr._Burns.png"
+  },
+  {
+    "id": 9,
+    "image": "./images/Ned.png"
+  },
+  {
+    "id": 10,
+    "image": "./images/Nelson.png"
+  },
+  {
+    "id": 11,
+    "image": "./images/Skinner.png"
+  },
+  {
+    "id": 12,
+    "image": "./images/Smithers.png"
   }
 ]

@@ -1,14 +1,24 @@
 import React from "react";
 import NavMessage from "../navmessage";
-import NavCounter from "../navcounter";
+
 import "./index.css";
 
-const Nav = () => {
+const Nav = props => {
   return (
     <div className="navBar">
-      <h1 className="navName">Clicky Game!</h1>
-      <NavMessage />
-      <NavCounter />
+      <ul>
+        <li className="navName">
+          <h3>Clicky Game!</h3>
+        </li>
+        <li className="navMessage">
+          <NavMessage />
+        </li>
+        <li className="navCounter">
+          <h3>
+            Current Score: {props.counter} | Top Score: {props.topScore}
+          </h3>
+        </li>
+      </ul>
     </div>
   );
 };
