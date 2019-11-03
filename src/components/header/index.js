@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./index.css";
 
-export class Header extends Component {
-  render() {
-    return (
-      <header className="myHeader">
-        <h1>Clicker Game!</h1>
-      </header>
-    );
-  }
-}
+const Header = () => {
+  return (
+    <div className="header">
+      <h1>Clicky Game!</h1>
+      <h3>Click and image to earn point, but don't on any more than once!</h3>
+    </div>
+  );
+};
 
 export default Header;

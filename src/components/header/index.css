@@ -1,6 +1,9 @@
-header {
-  background-color: skyblue;
-}
-.myHeader {
-  grid-area: header;
+.header {
+  background-color: darkgoldenrod;
+  display: table-cell;
+  width: 100vw;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  height: 250px;
 }

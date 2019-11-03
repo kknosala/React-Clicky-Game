@@ -1,0 +1,22 @@
+.navBar {
+  background-color: skyblue;
+  color: white;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+}
+
+.navName {
+  align-self: center;
+}
+
+.navMessage {
+  align-self: center;
+}
+
+.navCounter {
+  align-self: center;
+}

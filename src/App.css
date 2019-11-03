@@ -5,15 +5,3 @@ html {
   width: 100%;
   /* color: white; */
 }
-
-.App {
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-areas:
-    "header header header"
-    "counter counter counter"
-    ". imagelist ."
-    "footer footer footer";
-}
