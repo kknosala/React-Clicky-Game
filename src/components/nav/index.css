@@ -1,6 +1,6 @@
 .navBar {
-  background-color: skyblue;
-  color: white;
+  background-color: #007c7a;
+  color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,6 +11,7 @@
   justify-content: space-around;
   text-align: center;
   align-content: center;
+  border-bottom: 2px solid #ffffff;
 }
 ul {
   width: 100%;

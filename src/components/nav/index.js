@@ -11,7 +11,7 @@ const Nav = props => {
           <h3>Clicky Game!</h3>
         </li>
         <li className="navMessage">
-          <NavMessage />
+          <NavMessage message={props.message} mode={props.mode} />
         </li>
         <li className="navCounter">
           <h3>

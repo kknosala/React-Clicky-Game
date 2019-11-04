@@ -10,20 +10,28 @@ class Game extends Component {
     images,
     counter: 0,
     topScore: 0,
-    clicked: []
+    clicked: [],
+    message: "Click an image to begin!",
+    mode: "white"
   };
 
-  componentDidMount = () => {};
+  componentDidMount = () => {
+    this.shuffleData();
+  };
 
   handleCorrectGuess = id => {
     this.state.clicked.push(id);
     this.setState({ counter: this.state.counter + 1 });
+    this.setState({ message: "You were correct!" });
+    this.setState({ mode: "green" });
   };
 
   handleIncorrectGuess = () => {
     if (this.state.counter > this.state.topScore) {
       this.setState({ topScore: this.state.counter });
     }
+    this.setState({ message: "You were wrong! Try again!" });
+    this.setState({ mode: "red" });
     this.resetData();
   };
 
@@ -50,7 +58,12 @@ class Game extends Component {
   render() {
     return (
       <div className="Game">
-        <Nav counter={this.state.counter} topScore={this.state.topScore} />
+        <Nav
+          counter={this.state.counter}
+          topScore={this.state.topScore}
+          message={this.state.message}
+          mode={this.state.mode}
+        />
         <Header />
         <Container>
           {this.state.images.map(image => (

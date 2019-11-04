@@ -1,16 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import "./index.css";
 
-class NavMessage extends Component {
-  state = {
-    message: "Click an image to begin!"
-  };
-  render() {
-    return (
-      <div>
-        <h3>{this.state.message}</h3>
-      </div>
-    );
-  }
-}
+const NavMessage = props => {
+  return (
+    <div>
+      <h3 className={props.mode}>{props.message}</h3>
+    </div>
+  );
+};
 
 export default NavMessage;
