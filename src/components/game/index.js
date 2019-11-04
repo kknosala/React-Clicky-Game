@@ -32,7 +32,11 @@ class Game extends Component {
     this.setState({ clicked: [] });
   };
 
-  shuffleData = () => {};
+  shuffleData = () => {
+    images.sort(() => {
+      return 0.5 - Math.random();
+    });
+  };
 
   handleItemClick = id => {
     if (this.state.clicked.indexOf(id) === -1) {
@@ -40,6 +44,7 @@ class Game extends Component {
     } else {
       this.handleIncorrectGuess();
     }
+    this.shuffleData();
   };
 
   render() {
